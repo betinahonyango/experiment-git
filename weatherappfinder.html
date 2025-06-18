@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/weather.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather">
+      <h1>Betinah's Weather App</h1>
+      <form id="weather-form">
+        <input type="text" id="city" placeholder="Enter city name" required />
+        <button type="submit">Search</button>
+      </form>
+      <div class="WeatherInfo">
+        <div class="row">
+          <div class="col">
+            <h2 class="city-name" id="city-name">Abuja</h2>
+            <ul>
+              <li><span id="date-time">Monday 18:41</span>, broken clouds</li>
+              <li>
+                Humidity: <strong>22%</strong>, Wind: <strong>2.96km/h</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="temperature-container">
+              <canvas width="52" height="52"></canvas>
+              <div>
+                <span id="temperature">35</span>
+                <span class="unit">°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          This project was coded by
+          <a
+            href="https://www.linkedin.com/in/betina-onyango-627b28210?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVV5dxtTPSxecZJDQycTDiw%3D%3D"
+            target="_blank"
+            class="footer"
+            >Betinah Onyango</a
+          >
+        </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
